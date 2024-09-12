@@ -2,26 +2,26 @@
 #include <stdlib.h>
 
 void insertion(int vetores[], int tamanho){
-    int t = 0, c = 0;
+    int T = 0, C = 0;
     int vet_insert[tamanho];
     for (int i = 0; i < tamanho; i++) {
         vet_insert[i] = vetores[i];
     }
     for(int i = 1; i < tamanho; i++){
-        t++;
+        T++;
         int x = vet_insert[i]; 
         int j = i - 1;
         while(j >= 0 && vet_insert[j] > x){
-            c++;
-            t++;
+            C++;
+            T++;
             vet_insert[j + 1] = vet_insert[j]; 
             j--;
         }
-        if(j >= 0)c++;
-        t++;
+        if(j >= 0)C++;
+        T++;
         vet_insert[j + 1] = x; 
     }
-    printf("I %d %d %d\n", tamanho, t, c);
+    printf("I %d %d %d\n", tamanho, T, C);
 }
 
 void merge(int a[], int c, int f, int b[], int *T, int *C){
@@ -39,7 +39,8 @@ void merge(int a[], int c, int f, int b[], int *T, int *C){
     int j = 0;
     
     while (i1 <= m && i2 <= f) {
-        if (a[i1] < a[i2]) {
+        (*C)++;
+        if (a[i1] <= a[i2]) {
             b[j] = a[i1];
             (*T)++;
             i1++;
@@ -48,7 +49,6 @@ void merge(int a[], int c, int f, int b[], int *T, int *C){
             (*T)++;
             i2++;
         }
-        (*C)++;
         j++;
     }
     
