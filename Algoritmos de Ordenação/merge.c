@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+
 void merge(int a[], int c, int f, int b[], int *T, int *C){
     if (c >= f) {
         return;

@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+
 void qs(int a[], int c, int f){
 	if(c >= f){
 		return;

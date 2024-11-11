@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+
 void heapify(int a[], int p, int u){
     if(p <= u){
         int c = 2*p + 1;

@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+
 void shell(int a[], int n){
     int g ;
     g = 1;

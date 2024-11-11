@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+
 void cs(int a[], int n, int k){//dá pra calcular o k e não usar como parametrô
 	int cnt[k];
 	for(int i = 0; i < k; i++){
