@@ -3,7 +3,7 @@
 
 Repositório contendo os códigos desenvolvidos durante a matéria de introdução a ciência da computação 2. Aqui estão presentes códigos de algoritmos de busca, altorigmos de ordenação e trabalhos desenvolvidos.
 
-Na materia, foi apresentado algoritmos de ordenação como Insertion, Bubble, Selection, Merge, Heap, Shell, Quick, Counting e Radix. em sequência temos uma pequena descrição de cada método.
+Na materia, foi apresentado algoritmos de ordenação como Insertion, Bubble, Selection, Merge, Heap, Shell, Quick, Counting e Radix. Em sequência temos uma pequena descrição de cada método de ordenação.
 
 ## Insetion - O(n²)
 
