@@ -5,6 +5,8 @@ Repositório contendo os códigos desenvolvidos durante a matéria de introduç�
 
 Na materia, foi apresentado algoritmos de ordenação como Insertion, Bubble, Selection, Merge, Heap, Shell, Quick, Counting e Radix. Em sequência temos uma pequena descrição de cada método de ordenação.
 
+# Métodos de Ordenação
+
 ## Insetion - O(n²)
 
 **Descrição:** Ordena uma lista construindo uma sequência ordenada, um elemento por vez, selecionando o próximo elemento e inserindo-o na posição correta dentro da sequência ordenada.
@@ -57,3 +59,13 @@ Na materia, foi apresentado algoritmos de ordenação como Insertion, Bubble, Se
 **Descrição:** O Radix Sort é um algoritmo de ordenação não comparativo que classifica os números por dígitos individuais, começando do dígito menos significativo até o mais significativo (ou vice-versa). Ele utiliza uma ordenação estável, como o **Counting Sort** ou **Bucket Sort**, como sub-rotina para ordenar os números com base nos dígitos em cada posição.
 
 **Adequado para:** O Radix Sort é especialmente eficaz quando se está ordenando números inteiros com um número limitado de dígitos, como números de identificação ou grandes listas de números com valores pequenos.
+
+# Métodos de Busca
+
+## Busca Linear
+
+A busca linear percorre a lista elemento por elemento até encontrar o valor desejado ou determinar que ele não está presente. Esse método pode ser utilizado em listas ordenadas e não ordenadas, tornando-o mais versátil. No entanto, em listas grandes, seu desempenho pode ser lento, pois pode ser necessário verificar todos os elementos antes de encontrar o resultado.
+
+## Busca Binária 
+
+A busca binária é mais eficiente, quando comparada a busca linear, pois reduz o número de elementos a serem verificados a cada iteração. O algoritmo funciona dividindo a lista ordenada ao meio e comparando o valor procurado com o elemento central. Se o valor for menor, a busca continua na metade inferior da lista; se for maior, a busca ocorre na metade superior. Esse processo se repete até encontrar o elemento ou concluir que ele não está presente. A principal limitação desse método é que ele só pode ser aplicado a listas previamente ordenadas.
